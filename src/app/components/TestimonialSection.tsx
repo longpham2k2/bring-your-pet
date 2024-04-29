@@ -106,7 +106,7 @@ export default function TestimonialSection() {
               data-element_type="widget"
               data-widget_type="spacer.default"
             >
-              <div className="elementor-widget-container">
+              <div className="elementor-widget-container" suppressHydrationWarning>
                 <div className="elementor-spacer">
                   <div className="elementor-spacer-inner"></div>
                 </div>

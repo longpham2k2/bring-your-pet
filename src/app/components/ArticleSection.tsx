@@ -1,10 +1,19 @@
 "use client";
 
+import React from "react";
 import ArticleItem from "../bai-viet/components/ArticleItem";
 import { getArticles } from "../bai-viet/scripts";
+import IArticle from "../bai-viet/interfaces/IArticle";
 
 export default function ArticleSection() {
-  const articles = getArticles(1).splice(0, 6);
+  const [articles, setArticles] = React.useState<IArticle[]>([]);
+  React.useEffect(() => {
+    let e = async () => {
+      const data = await getArticles(6, 1);
+      setArticles(data);
+    }
+    e();
+  }, []);
   return (
     <section
       className="elementor-section elementor-top-section elementor-element elementor-element-2cd070cf elementor-section-boxed elementor-section-height-default elementor-section-height-default"

@@ -1,9 +1,10 @@
 "use client";
 
-export default function BookingCoupon() {
+export default function BookingCoupon({ visible }: { visible?: boolean }) {
   return (
     <div
-      data-elementor-type="popup"
+      // data-elementor-type="popup"
+      style={visible ? { display: "block" } : { display: "none" }}
       data-elementor-id="3318"
       className="elementor elementor-3318 elementor-location-popup"
       data-elementor-settings='{"a11y_navigation":"yes","timing":[]}'
@@ -16,7 +17,10 @@ export default function BookingCoupon() {
           data-element_type="section"
           data-settings='{"background_background":"classic"}'
         >
-          <div className="elementor-background-overlay" suppressHydrationWarning></div>
+          <div
+            className="elementor-background-overlay"
+            suppressHydrationWarning
+          ></div>
           <div className="elementor-container elementor-column-gap-default">
             <div
               className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-88f75ee"
@@ -210,7 +214,10 @@ export default function BookingCoupon() {
               data-settings='{"background_background":"classic","animation":"fadeInUp","animation_delay":400}'
             >
               <div className="elementor-widget-wrap elementor-element-populated">
-                <div className="elementor-background-overlay" suppressHydrationWarning></div>
+                <div
+                  className="elementor-background-overlay"
+                  suppressHydrationWarning
+                ></div>
                 <div
                   className="elementor-element elementor-element-8b3434b elementor-widget elementor-widget-icon-box"
                   data-id="8b3434b"

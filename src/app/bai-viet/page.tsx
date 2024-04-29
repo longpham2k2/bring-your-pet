@@ -9,16 +9,17 @@ import ExtraScript from "@/app/components/ExtraScript";
 import UnknownSection from "./components/UnknownSection";
 import { getArticles } from "./scripts";
 import ArticleItem from "./components/ArticleItem";
-import BookingForm from "../forms/bookingForm";
-import BookingCoupon from "../forms/bookingCoupon";
 import IArticle from "./interfaces/IArticle";
 
 export default function BaiViet() {
   const [page, setPage] = React.useState<number>(1);
   const [articles, setArticles] = React.useState<IArticle[]>([]);
-
   React.useEffect(() => {
-    setArticles(getArticles(page));
+    let e = async () => {
+      const data = await getArticles(10, page);
+      setArticles(data);
+    };
+    e();
   }, [page]);
   return (
     <>
@@ -64,22 +65,30 @@ export default function BaiViet() {
                       className="elementor-pagination"
                       aria-label="Pagination"
                     >
-                      {[1, 2, 3].map((pageNumber) => (
-                        <span
-                          key={pageNumber}
-                          aria-current="page"
-                          className={`page-numbers${
-                            page == pageNumber ? " current" : ""
-                          }`}
-                          style={{ cursor: "pointer" }}
-                          onClick={() => {
-                            if (page != pageNumber) setPage(pageNumber);
-                          }}
-                        >
-                          <span className="elementor-screen-only">Page</span>
-                          {pageNumber}
-                        </span>
-                      ))}
+                      {[1, 2, 3].map((pageNumber) =>
+                        page == pageNumber ? (
+                          <span
+                            key={pageNumber}
+                            aria-current={"page"}
+                            className={"page-numbers current"}
+                          >
+                            <span className="elementor-screen-only">Page</span>
+                            {pageNumber}
+                          </span>
+                        ) : (
+                          <a
+                            key={pageNumber}
+                            href="#"
+                            className={"page-numbers"}
+                            onClick={() => {
+                              if (page != pageNumber) setPage(pageNumber);
+                            }}
+                          >
+                            <span className="elementor-screen-only">Page</span>
+                            {pageNumber}
+                          </a>
+                        )
+                      )}
                     </nav>
                   </div>
                 </div>

@@ -1,12 +1,16 @@
 "use client";
 
+import React, { Suspense } from "react";
 import { usePathname } from "next/navigation";
 import BookingForm from "../forms/bookingForm";
 import BookingCoupon from "../forms/bookingCoupon";
-import { Suspense } from "react";
+import Modal from "./Modal";
 
 export default function Header() {
   const pathname = usePathname();
+  const [isBookingFormVisible, setIsBookingFormVisible] = React.useState(false);
+  const [isBookingCouponVisible, setIsBookingCouponVisible] = React.useState(false);
+
   return (
     <div
       data-elementor-type="header"
@@ -410,6 +414,7 @@ export default function Header() {
                                 : ""
                             }`}
                             tabIndex={-1}
+                            suppressHydrationWarning
                           >
                             Bài viết
                           </a>
@@ -443,6 +448,7 @@ export default function Header() {
                                 : ""
                             }`}
                             tabIndex={-1}
+                            suppressHydrationWarning
                           >
                             Sản phẩm
                           </a>
@@ -586,6 +592,7 @@ export default function Header() {
                                 : ""
                             }`}
                             tabIndex={-1}
+                            suppressHydrationWarning
                           >
                             Giới thiệu
                           </a>
@@ -689,7 +696,8 @@ export default function Header() {
                     <div className="elementor-button-wrapper">
                       <a
                         className="elementor-button elementor-button-link elementor-size-sm elementor-animation-push"
-                        href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjMyNDciLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+                        // href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjMyNDciLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D"
+                        onClick={() => {setIsBookingFormVisible(true)}}
                       >
                         <span className="elementor-button-content-wrapper">
                           <span className="elementor-button-text">
@@ -705,7 +713,9 @@ export default function Header() {
           </div>
 
           <Suspense>
-            <BookingForm />
+            <Modal visible={isBookingFormVisible} setVisible={setIsBookingFormVisible}>
+              <BookingForm />
+            </Modal>
             <BookingCoupon />
           </Suspense>
         </section>
