@@ -1,23 +1,36 @@
 "use client";
 
 import React from "react";
-import Head from "@/app/components/Head";
 import Body from "@/app/components/Body";
+import Head from "@/app/components/Head";
+import IArticle from "@/app/bai-viet/interfaces/IArticle";
+import { getArticles, getCategory } from "./scripts";
 import Header from "@/app/components/Header";
+import BreadcrumbSection from "./components/BreadcrumbSection";
+import ArticleItem from "@/app/bai-viet/components/ArticleItem";
 import Footer from "@/app/components/Footer";
 import ExtraScript from "@/app/components/ExtraScript";
-import BreadcrumbSection from "./components/BreadcrumbSection";
-import { getArticles } from "./scripts";
-import ArticleItem from "./components/ArticleItem";
-import IArticle from "./interfaces/IArticle";
+import ICategory from "./interfaces/ICategory";
 
-export default function BaiViet() {
+export default function CategoryKey(props: {
+  params: { key: string };
+  searchParams: any;
+}) {
+  const { params } = props;
+  const { key } = params;
+
   const [page, setPage] = React.useState<number>(1);
   const [articles, setArticles] = React.useState<IArticle[]>([]);
+  const [category, setCategory] = React.useState<ICategory>({
+    key: "error",
+    name: "Không xác định",
+  });
   React.useEffect(() => {
     let e = async () => {
-      const data = await getArticles(10, page);
+      const data = await getArticles(key, 10, page);
       setArticles(data);
+      const currentCategory = await getCategory(key);
+      if (category) setCategory(currentCategory);
     };
     e();
   }, [page]);
@@ -26,27 +39,30 @@ export default function BaiViet() {
       <Head>
         <link
           rel="stylesheet"
-          id="elementor-post-2188-css"
-          href="/wp-content/uploads/elementor/css/post-21880648.css?ver=1706601148"
+          id="elementor-post-2975-css"
+          href="/wp-content/uploads/elementor/css/post-2975cac1.css?ver=1706575210"
           media="all"
         />
       </Head>
-      <Body prependclassName="blog" appendclassName="elementor-page-2188">
+      <Body
+        prependclassName="archive category category-chia-se-cach-cham-soc-thu-cung category-63"
+        appendclassName="elementor-page-2975"
+      >
         <Header />
-        <div className="elementor elementor-2188 elementor-location-archive">
+        <div className="elementor elementor-2975 elementor-location-archive">
           <div className="elementor-section-wrap">
-            <BreadcrumbSection />
+            <BreadcrumbSection {...category} />
             <div
-              className="elementor-element elementor-element-d33c52f e-flex e-con-boxed e-con e-parent"
-              data-id="d33c52f"
+              className="elementor-element elementor-element-7d489ab8 e-flex e-con-boxed e-con e-parent"
+              data-id="7d489ab8"
               data-element_type="container"
               data-settings='{"container_type":"flex","content_width":"boxed"}'
               data-core-v316-plus="true"
             >
               <div className="e-con-inner">
                 <div
-                  className="elementor-element elementor-element-9c9a914 elementor-grid-4 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-card-shadow-yes elementor-posts__hover-gradient elementor-widget elementor-widget-archive-posts"
-                  data-id="9c9a914"
+                  className="elementor-element elementor-element-39d9aa09 elementor-grid-4 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-card-shadow-yes elementor-posts__hover-gradient elementor-widget elementor-widget-archive-posts"
+                  data-id="39d9aa09"
                   data-element_type="widget"
                   data-settings='{"archive_cards_columns":"4","archive_cards_columns_tablet":"2","archive_cards_columns_mobile":"1","archive_cards_row_gap":{"unit":"px","size":35,"sizes":[]},"archive_cards_row_gap_tablet":{"unit":"px","size":"","sizes":[]},"archive_cards_row_gap_mobile":{"unit":"px","size":"","sizes":[]},"pagination_type":"numbers"}'
                   data-widget_type="archive-posts.archive_cards"

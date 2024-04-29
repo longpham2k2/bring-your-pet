@@ -44,30 +44,30 @@ export default function ExtraScript({children}: {children?: React.ReactNode}) {
       <link
         rel="stylesheet"
         id="wc-blocks-style-css"
-        href="wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks8fea.css?ver=11.8.0-dev"
+        href="/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks8fea.css?ver=11.8.0-dev"
         media="all"
       />
       <link
         rel="stylesheet"
         id="flatpickr-css"
-        href="wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.mineda1.css?ver=4.1.4"
+        href="/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.mineda1.css?ver=4.1.4"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-post-3318-css"
-        href="wp-content/uploads/elementor/css/post-33187bad.css?ver=1706552612"
+        href="/wp-content/uploads/elementor/css/post-33187bad.css?ver=1706552612"
         media="all"
       />
       {children}
       <link
         rel="stylesheet"
         id="e-animations-css"
-        href="wp-content/plugins/elementor/assets/lib/animations/animations.min225e.css?ver=3.19.0"
+        href="/wp-content/plugins/elementor/assets/lib/animations/animations.min225e.css?ver=3.19.0"
         media="all"
       />
       <script
-        src="wp-content/themes/hello-elementor/assets/js/hello-frontend.min8a54.js?ver=1.0.0"
+        src="/wp-content/themes/hello-elementor/assets/js/hello-frontend.min8a54.js?ver=1.0.0"
         id="hello-theme-frontend-js"
       ></script>
       <script
@@ -137,35 +137,35 @@ export default function ExtraScript({children}: {children?: React.ReactNode}) {
         }}
       ></script>
       <script
-        src="wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.mind552.js?ver=5.8.12"
+        src="/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.mind552.js?ver=5.8.12"
         id="eael-general-js"
       ></script>
       <script
-        src="wp-content/plugins/pro-elements/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1"
+        src="/wp-content/plugins/pro-elements/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1"
         id="smartmenus-js"
       ></script>
       <script
-        src="wp-includes/js/imagesloaded.minbb93.js?ver=5.0.0"
+        src="/wp-includes/js/imagesloaded.minbb93.js?ver=5.0.0"
         id="imagesloaded-js"
       ></script>
       <script
-        src="wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min3958.js?ver=0.2.1"
+        src="/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min3958.js?ver=0.2.1"
         id="jquery-numerator-js"
       ></script>
       <script
-        src="wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.mineda1.js?ver=4.1.4"
+        src="/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.mineda1.js?ver=4.1.4"
         id="flatpickr-js"
       ></script>
       <script
-        src="wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min6b60.js?ver=3.16.2"
+        src="/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min6b60.js?ver=3.16.2"
         id="elementor-pro-webpack-runtime-js"
       ></script>
       <script
-        src="wp-content/plugins/elementor/assets/js/webpack.runtime.min225e.js?ver=3.19.0"
+        src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min225e.js?ver=3.19.0"
         id="elementor-webpack-runtime-js"
       ></script>
       <script
-        src="wp-content/plugins/elementor/assets/js/frontend-modules.min225e.js?ver=3.19.0"
+        src="/wp-content/plugins/elementor/assets/js/frontend-modules.min225e.js?ver=3.19.0"
         id="elementor-frontend-modules-js"
       ></script>
       <script
@@ -217,15 +217,15 @@ export default function ExtraScript({children}: {children?: React.ReactNode}) {
         }}
       ></script>
       <script
-        src="wp-content/plugins/pro-elements/assets/js/frontend.min6b60.js?ver=3.16.2"
+        src="/wp-content/plugins/pro-elements/assets/js/frontend.min6b60.js?ver=3.16.2"
         id="elementor-pro-frontend-js"
       ></script>
       <script
-        src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
+        src="/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
         id="elementor-waypoints-js"
       ></script>
       <script
-        src="wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2"
+        src="/wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2"
         id="jquery-ui-core-js"
       ></script>
       <script
@@ -366,11 +366,11 @@ export default function ExtraScript({children}: {children?: React.ReactNode}) {
         }}
       ></script>
       <script
-        src="wp-content/plugins/elementor/assets/js/frontend.min225e.js?ver=3.19.0"
+        src="/wp-content/plugins/elementor/assets/js/frontend.min225e.js?ver=3.19.0"
         id="elementor-frontend-js"
       ></script>
       <script
-        src="wp-content/plugins/pro-elements/assets/js/elements-handlers.min6b60.js?ver=3.16.2"
+        src="/wp-content/plugins/pro-elements/assets/js/elements-handlers.min6b60.js?ver=3.16.2"
         id="pro-elements-handlers-js"
       ></script>
     </>

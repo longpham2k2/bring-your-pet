@@ -7,7 +7,7 @@ import { getCategories } from "../categories/route";
 export async function getArticles(
   perpage: number,
   page: number,
-  categoryId?: string
+  categoryKey?: string
 ): Promise<Articles[]> {
   try {
     dbConnect();
@@ -22,6 +22,15 @@ export async function getArticles(
         },
       },
       { $unwind: "$category" },
+      categoryKey
+        ? {
+            $match: {
+              "category.key": categoryKey,
+            },
+          }
+        : {
+            $match: {},
+          },
       {
         $project: {
           _id: 1,
@@ -41,16 +50,17 @@ export async function getArticles(
 
     return result;
   } catch (err: any) {
-    throw err;
+    console.log(err);
+    return [];
   }
 }
 
 export async function GET(req: NextRequest): Promise<any> {
   const perpage = parseInt(req.nextUrl.searchParams.get("perpage") || "10");
   const page = parseInt(req.nextUrl.searchParams.get("page") || "1");
-  const categoryId = req.nextUrl.searchParams.get("categoryId") || undefined;
+  const categoryKey = req.nextUrl.searchParams.get("category") || undefined;
   try {
-    const articles = await getArticles(perpage, page, categoryId);
+    const articles = await getArticles(perpage, page, categoryKey);
 
     return Response.json([...articles]);
   } catch (err: any) {

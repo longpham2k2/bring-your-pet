@@ -64,7 +64,7 @@ export default function Header() {
                           fetchPriority="high"
                           width="504"
                           height="168"
-                          src="wp-content/uploads/2023/06/Qinpet-Logo-Black.png"
+                          src="/wp-content/uploads/2023/06/Qinpet-Logo-Black.png"
                           className="attachment-full size-full wp-image-1959"
                           alt=""
                           srcSet="
@@ -95,7 +95,7 @@ export default function Header() {
                   <div className="elementor-widget-container">
                     <link
                       rel="stylesheet"
-                      href="wp-content/plugins/pro-elements/assets/css/widget-nav-menu.min.css"
+                      href="/wp-content/plugins/pro-elements/assets/css/widget-nav-menu.min.css"
                     />
                     <nav className="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-text e--animation-sink">
                       <ul id="menu-1-413fca0b" className="elementor-nav-menu">
@@ -112,7 +112,7 @@ export default function Header() {
                         </li>
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2197">
                           <a
-                            href="bai-viet/"
+                            href="/bai-viet/"
                             className={`elementor-item${
                               pathname.startsWith("/bai-viet")
                                 ? " elementor-item-active"
@@ -124,7 +124,7 @@ export default function Header() {
                           <ul className="sub-menu elementor-nav-menu--dropdown">
                             <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2405">
                               <a
-                                href="category/chia-se-cach-cham-soc-thu-cung/"
+                                href="/category/chia-se-cach-cham-soc-thu-cung/"
                                 className="elementor-sub-item"
                               >
                                 Chia sẻ &#8211; chăm sóc thú cưng
@@ -132,7 +132,7 @@ export default function Header() {
                             </li>
                             <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2987">
                               <a
-                                href="category/chia-se-phoi-giong-cho-meo/"
+                                href="/category/chia-se-phoi-giong-cho-meo/"
                                 className="elementor-sub-item"
                               >
                                 Chia sẻ &#8211; Phối Giống cho chó mèo
@@ -140,138 +140,9 @@ export default function Header() {
                             </li>
                           </ul>
                         </li>
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2202">
-                          <a
-                            href="san-pham/"
-                            className={`elementor-item${
-                              pathname.startsWith("/san-pham")
-                                ? " elementor-item-active"
-                                : ""
-                            }`}
-                            suppressHydrationWarning
-                          >
-                            Sản phẩm
-                          </a>
-                          <ul className="sub-menu elementor-nav-menu--dropdown">
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2211">
-                              <a
-                                href="danh-muc-san-pham/cac-loai-sua-tam/"
-                                className="elementor-sub-item"
-                              >
-                                Sữa Tắm
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2213">
-                              <a
-                                href="danh-muc-san-pham/thuc-an-meo/"
-                                className="elementor-sub-item"
-                              >
-                                Thức ăn hạt mèo
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2214">
-                              <a
-                                href="danh-muc-san-pham/thuc-an-cho/"
-                                className="elementor-sub-item"
-                              >
-                                Thức ăn hạt chó
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2215">
-                              <a
-                                href="danh-muc-san-pham/phu-kien-thu-cung/"
-                                className="elementor-sub-item"
-                              >
-                                Phụ kiện thú cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2888">
-                              <a
-                                href="danh-muc-san-pham/san-pham-cong-nghe/"
-                                className="elementor-sub-item"
-                              >
-                                Công nghệ &#8211; Điện tử cho thú cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3305">
-                              <a
-                                href="danh-muc-san-pham/ve-sinh-cho-meo/"
-                                className="elementor-sub-item"
-                              >
-                                VỆ SINH CHO MÈO
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3308">
-                              <a
-                                href="danh-muc-san-pham/banh-xuong-pate-do-thuong-cho-cung/"
-                                className="elementor-sub-item"
-                              >
-                                Bánh &#8211; Xương &#8211; Pate &#8211; Đồ
-                                thưởng chó cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3306">
-                              <a
-                                href="danh-muc-san-pham/khu-mui-ve-sinh-cho-thu-cung/"
-                                className="elementor-sub-item"
-                              >
-                                Khử mùi &#8211; vệ sinh cho thú cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3309">
-                              <a
-                                href="danh-muc-san-pham/sot-pate-do-thuong-meo-cung/"
-                                className="elementor-sub-item"
-                              >
-                                Sốt &#8211; Pate &#8211; Đồ thưởng mèo cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3307">
-                              <a
-                                href="danh-muc-san-pham/deal-soc/"
-                                className="elementor-sub-item"
-                              >
-                                DEAL SỐC
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3310">
-                              <a
-                                href="danh-muc-san-pham/quan-ao-thu-cung/"
-                                className="elementor-sub-item"
-                              >
-                                Quần Áo Thú Cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3311">
-                              <a
-                                href="danh-muc-san-pham/cac-loai-sua-tam/sua-tam-cho-meo/"
-                                className="elementor-sub-item"
-                              >
-                                Sữa tắm &#8211; trị ve rận, nước hoa, Khử mùi,
-                                Dưỡng lông chó mèo
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3312">
-                              <a
-                                href="danh-muc-san-pham/thuoc-cho-cho-meo/"
-                                className="elementor-sub-item"
-                              >
-                                Thuốc cho chó mèo
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2748">
-                              <a
-                                href="bao-hanh/"
-                                className="elementor-sub-item"
-                              >
-                                THÔNG TIN BẢO HÀNH
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2199">
                           <a
-                            href="dich-vu/"
+                            href="/dich-vu/"
                             className={`elementor-item${
                               pathname.startsWith("/dich-vu")
                                 ? " elementor-item-active"
@@ -284,7 +155,7 @@ export default function Header() {
                           <ul className="sub-menu elementor-nav-menu--dropdown">
                             <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2576">
                               <a
-                                href="category/dv-khach-san/"
+                                href="/category/dv-khach-san/"
                                 className="elementor-sub-item"
                               >
                                 Dịch vụ Khách Sạn
@@ -292,7 +163,7 @@ export default function Header() {
                             </li>
                             <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2403">
                               <a
-                                href="category/https-qinpethouse-com-cat-tia-long-cho-tai-ha-noi/"
+                                href="/category/spa-grooming/"
                                 className="elementor-sub-item"
                               >
                                 Spa Grooming
@@ -300,7 +171,7 @@ export default function Header() {
                               <ul className="sub-menu elementor-nav-menu--dropdown">
                                 <li className="menu-item menu-item-type-post_type menu-item-object-post menu-item-2404">
                                   <a
-                                    href="gioi-thieu-ve-dich-vu-grooming-spa-qinpet/"
+                                    href="/gioi-thieu-ve-dich-vu-grooming-spa-qinpet/"
                                     className="elementor-sub-item"
                                   >
                                     Giới thiệu về dịch vụ Grooming Spa | QINPET
@@ -308,7 +179,7 @@ export default function Header() {
                                 </li>
                                 <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3288">
                                   <a
-                                    href="category/tam-say-ve-sinh-cho-meo/"
+                                    href="/category/tam-say-ve-sinh-cho-meo/"
                                     className="elementor-sub-item"
                                   >
                                     Tắm sấy và vệ sinh cho thú cưng
@@ -316,7 +187,7 @@ export default function Header() {
                                 </li>
                                 <li className="menu-item menu-item-type-post_type menu-item-object-post menu-item-2419">
                                   <a
-                                    href="dich-vu-tam-say-va-ve-sinh-cho-thu-cung-tai-qinpet-cham-soc-toan-dien-cho-thu-cung-cua-ban/"
+                                    href="/dich-vu-tam-say-va-ve-sinh-cho-thu-cung-tai-qinpet-cham-soc-toan-dien-cho-thu-cung-cua-ban/"
                                     className="elementor-sub-item"
                                   >
                                     Giới thiệu – Dịch Vụ Tắm Sấy Và Vệ Sinh Cho
@@ -327,7 +198,7 @@ export default function Header() {
                             </li>
                             <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2997">
                               <a
-                                href="category/thuong-hieu-qinpet/"
+                                href="/category/thuong-hieu-qinpet/"
                                 className="elementor-sub-item"
                               >
                                 Về chúng tôi &#8211; Thương Hiệu QINPET
@@ -337,7 +208,7 @@ export default function Header() {
                         </li>
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2201">
                           <a
-                            href="lien-he/"
+                            href="/lien-he/"
                             className={`elementor-item${
                               pathname.startsWith("/lien-he")
                                 ? " elementor-item-active"
@@ -345,18 +216,6 @@ export default function Header() {
                             }`}
                           >
                             Liên hệ
-                          </a>
-                        </li>
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3433">
-                          <a
-                            href="thanh-toan/gio-hang/"
-                            className={`elementor-item${
-                              pathname.startsWith("/gio-hang")
-                                ? " elementor-item-active"
-                                : ""
-                            }`}
-                          >
-                            Giỏ hàng
                           </a>
                         </li>
                       </ul>
@@ -407,7 +266,7 @@ export default function Header() {
                         </li>
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2197">
                           <a
-                            href="bai-viet/"
+                            href="/bai-viet/"
                             className={`elementor-item${
                               pathname.startsWith("/bai-viet")
                                 ? " elementor-item-active"
@@ -421,7 +280,7 @@ export default function Header() {
                           <ul className="sub-menu elementor-nav-menu--dropdown">
                             <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2405">
                               <a
-                                href="category/chia-se-cach-cham-soc-thu-cung/"
+                                href="/category/chia-se-cach-cham-soc-thu-cung/"
                                 className="elementor-sub-item"
                                 tabIndex={-1}
                               >
@@ -430,7 +289,7 @@ export default function Header() {
                             </li>
                             <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2987">
                               <a
-                                href="category/chia-se-phoi-giong-cho-meo/"
+                                href="/category/chia-se-phoi-giong-cho-meo/"
                                 className="elementor-sub-item"
                                 tabIndex={-1}
                               >
@@ -439,153 +298,9 @@ export default function Header() {
                             </li>
                           </ul>
                         </li>
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2202">
-                          <a
-                            href="san-pham/"
-                            className={`elementor-item${
-                              pathname.startsWith("/san-pham")
-                                ? " elementor-item-active"
-                                : ""
-                            }`}
-                            tabIndex={-1}
-                            suppressHydrationWarning
-                          >
-                            Sản phẩm
-                          </a>
-                          <ul className="sub-menu elementor-nav-menu--dropdown">
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2211">
-                              <a
-                                href="danh-muc-san-pham/cac-loai-sua-tam/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Sữa Tắm
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2213">
-                              <a
-                                href="danh-muc-san-pham/thuc-an-meo/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Thức ăn hạt mèo
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2214">
-                              <a
-                                href="danh-muc-san-pham/thuc-an-cho/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Thức ăn hạt chó
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2215">
-                              <a
-                                href="danh-muc-san-pham/phu-kien-thu-cung/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Phụ kiện thú cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2888">
-                              <a
-                                href="danh-muc-san-pham/san-pham-cong-nghe/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Công nghệ &#8211; Điện tử cho thú cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3305">
-                              <a
-                                href="danh-muc-san-pham/ve-sinh-cho-meo/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                VỆ SINH CHO MÈO
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3308">
-                              <a
-                                href="danh-muc-san-pham/banh-xuong-pate-do-thuong-cho-cung/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Bánh &#8211; Xương &#8211; Pate &#8211; Đồ
-                                thưởng chó cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3306">
-                              <a
-                                href="danh-muc-san-pham/khu-mui-ve-sinh-cho-thu-cung/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Khử mùi &#8211; vệ sinh cho thú cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3309">
-                              <a
-                                href="danh-muc-san-pham/sot-pate-do-thuong-meo-cung/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Sốt &#8211; Pate &#8211; Đồ thưởng mèo cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3307">
-                              <a
-                                href="danh-muc-san-pham/deal-soc/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                DEAL SỐC
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3310">
-                              <a
-                                href="danh-muc-san-pham/quan-ao-thu-cung/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Quần Áo Thú Cưng
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3311">
-                              <a
-                                href="danh-muc-san-pham/cac-loai-sua-tam/sua-tam-cho-meo/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Sữa tắm &#8211; trị ve rận, nước hoa, Khử mùi,
-                                Dưỡng lông chó mèo
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3312">
-                              <a
-                                href="danh-muc-san-pham/thuoc-cho-cho-meo/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                Thuốc cho chó mèo
-                              </a>
-                            </li>
-                            <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2748">
-                              <a
-                                href="bao-hanh/"
-                                className="elementor-sub-item"
-                                tabIndex={-1}
-                              >
-                                THÔNG TIN BẢO HÀNH
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2199">
                           <a
-                            href="dich-vu/"
+                            href="/dich-vu/"
                             className={`elementor-item${
                               pathname.startsWith("/dich-vu")
                                 ? " elementor-item-active"
@@ -599,7 +314,7 @@ export default function Header() {
                           <ul className="sub-menu elementor-nav-menu--dropdown">
                             <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2576">
                               <a
-                                href="category/dv-khach-san/"
+                                href="/category/dv-khach-san/"
                                 className="elementor-sub-item"
                                 tabIndex={-1}
                               >
@@ -608,7 +323,7 @@ export default function Header() {
                             </li>
                             <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2403">
                               <a
-                                href="category/https-qinpethouse-com-cat-tia-long-cho-tai-ha-noi/"
+                                href="/category/spa-grooming/"
                                 className="elementor-sub-item"
                                 tabIndex={-1}
                               >
@@ -617,7 +332,7 @@ export default function Header() {
                               <ul className="sub-menu elementor-nav-menu--dropdown">
                                 <li className="menu-item menu-item-type-post_type menu-item-object-post menu-item-2404">
                                   <a
-                                    href="gioi-thieu-ve-dich-vu-grooming-spa-qinpet/"
+                                    href="/gioi-thieu-ve-dich-vu-grooming-spa-qinpet/"
                                     className="elementor-sub-item"
                                     tabIndex={-1}
                                   >
@@ -626,7 +341,7 @@ export default function Header() {
                                 </li>
                                 <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3288">
                                   <a
-                                    href="category/tam-say-ve-sinh-cho-meo/"
+                                    href="/category/tam-say-ve-sinh-cho-meo/"
                                     className="elementor-sub-item"
                                     tabIndex={-1}
                                   >
@@ -635,7 +350,7 @@ export default function Header() {
                                 </li>
                                 <li className="menu-item menu-item-type-post_type menu-item-object-post menu-item-2419">
                                   <a
-                                    href="dich-vu-tam-say-va-ve-sinh-cho-thu-cung-tai-qinpet-cham-soc-toan-dien-cho-thu-cung-cua-ban/"
+                                    href="/dich-vu-tam-say-va-ve-sinh-cho-thu-cung-tai-qinpet-cham-soc-toan-dien-cho-thu-cung-cua-ban/"
                                     className="elementor-sub-item"
                                     tabIndex={-1}
                                   >
@@ -647,7 +362,7 @@ export default function Header() {
                             </li>
                             <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2997">
                               <a
-                                href="category/thuong-hieu-qinpet/"
+                                href="/category/thuong-hieu-qinpet/"
                                 className="elementor-sub-item"
                                 tabIndex={-1}
                               >
@@ -658,7 +373,7 @@ export default function Header() {
                         </li>
                         <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2201">
                           <a
-                            href="lien-he/"
+                            href="/lien-he/"
                             className={`elementor-item${
                               pathname.startsWith("/lien-he")
                                 ? " elementor-item-active"
@@ -667,19 +382,6 @@ export default function Header() {
                             tabIndex={-1}
                           >
                             Liên hệ
-                          </a>
-                        </li>
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3433">
-                          <a
-                            href="thanh-toan/gio-hang/"
-                            className={`elementor-item${
-                              pathname.startsWith("/gio-hang")
-                                ? " elementor-item-active"
-                                : ""
-                            }`}
-                            tabIndex={-1}
-                          >
-                            Giỏ hàng
                           </a>
                         </li>
                       </ul>

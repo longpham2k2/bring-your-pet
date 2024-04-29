@@ -6,15 +6,16 @@ import throwException from "../error/thrower";
 export async function getCategories(): Promise<Categories[]> {
   try {
     dbConnect();
-    const result: any[] = await Category.find({});
-    let categories: Categories[] = result.map((doc) => {
+    const categories: any[] = await Category.find();
+    let result: Categories[] = categories.map((doc) => {
       const category = JSON.parse(JSON.stringify(doc));
       return category;
     });
 
-    return categories;
+    return result;
   } catch (err: any) {
-    throw err;
+    console.log(err);
+    return [];
   }
 }
 

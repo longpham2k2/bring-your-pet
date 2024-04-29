@@ -6,19 +6,19 @@ export default function Head({children}: {children?: React.ReactNode}) {
       <link
         rel="stylesheet"
         id="woocommerce-layout-css"
-        href="wp-content/plugins/woocommerce/assets/css/woocommerce-layout8833.css?ver=8.5.2"
+        href="/wp-content/plugins/woocommerce/assets/css/woocommerce-layout8833.css?ver=8.5.2"
         media="all"
       />
       <link
         rel="stylesheet"
         id="woocommerce-smallscreen-css"
-        href="wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen8833.css?ver=8.5.2"
+        href="/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen8833.css?ver=8.5.2"
         media="only screen and (max-width: 768px)"
       />
       <link
         rel="stylesheet"
         id="woocommerce-general-css"
-        href="wp-content/plugins/woocommerce/assets/css/woocommerce8833.css?ver=8.5.2"
+        href="/wp-content/plugins/woocommerce/assets/css/woocommerce8833.css?ver=8.5.2"
         media="all"
       />
       <style
@@ -34,80 +34,80 @@ export default function Head({children}: {children?: React.ReactNode}) {
       <link
         rel="stylesheet"
         id="hello-elementor-css"
-        href="wp-content/themes/hello-elementor/style.min1102.css?ver=2.8.1"
+        href="/wp-content/themes/hello-elementor/style.min1102.css?ver=2.8.1"
         media="all"
       />
       <link
         rel="stylesheet"
         id="hello-elementor-theme-style-css"
-        href="wp-content/themes/hello-elementor/theme.min1102.css?ver=2.8.1"
+        href="/wp-content/themes/hello-elementor/theme.min1102.css?ver=2.8.1"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-frontend-css"
-        href="wp-content/plugins/elementor/assets/css/frontend-lite.min225e.css?ver=3.19.0"
+        href="/wp-content/plugins/elementor/assets/css/frontend-lite.min225e.css?ver=3.19.0"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-post-1939-css"
-        href="wp-content/uploads/elementor/css/post-19397bad.css?ver=1706552612"
+        href="/wp-content/uploads/elementor/css/post-19397bad.css?ver=1706552612"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-lazyload-css"
-        href="wp-content/plugins/elementor/assets/css/modules/lazyload/frontend.min225e.css?ver=3.19.0"
+        href="/wp-content/plugins/elementor/assets/css/modules/lazyload/frontend.min225e.css?ver=3.19.0"
         media="all"
       />
       <link
         rel="stylesheet"
         id="swiper-css"
-        href="wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css?ver=8.4.5"
+        href="/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css?ver=8.4.5"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-pro-css"
-        href="wp-content/plugins/pro-elements/assets/css/frontend-lite.min6b60.css?ver=3.16.2"
+        href="/wp-content/plugins/pro-elements/assets/css/frontend-lite.min6b60.css?ver=3.16.2"
         media="all"
       />
       <link
         rel="stylesheet"
         id="font-awesome-5-all-css"
-        href="wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min225e.css?ver=3.19.0"
+        href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min225e.css?ver=3.19.0"
         media="all"
       />
       <link
         rel="stylesheet"
         id="font-awesome-4-shim-css"
-        href="wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min225e.css?ver=3.19.0"
+        href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min225e.css?ver=3.19.0"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-post-1943-css"
-        href="wp-content/uploads/elementor/css/post-19437bad.css?ver=1706552612"
+        href="/wp-content/uploads/elementor/css/post-19437bad.css?ver=1706552612"
         media="all"
       />
       <link
         rel="stylesheet"
         id="elementor-post-1915-css"
-        href="wp-content/uploads/elementor/css/post-19157bad.css?ver=1706552612"
+        href="/wp-content/uploads/elementor/css/post-19157bad.css?ver=1706552612"
         media="all"
       />
       {children}
       <link
         rel="stylesheet"
         id="elementor-post-3247-css"
-        href="wp-content/uploads/elementor/css/post-32477bad.css?ver=1706552612"
+        href="/wp-content/uploads/elementor/css/post-32477bad.css?ver=1706552612"
         media="all"
       />
       <link
         rel="stylesheet"
         id="eael-general-css"
-        href="wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.mind552.css?ver=5.8.12"
+        href="/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.mind552.css?ver=5.8.12"
         media="all"
       />
       <link
@@ -118,22 +118,22 @@ export default function Head({children}: {children?: React.ReactNode}) {
       />
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="" />
       <script
-        src="wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1"
+        src="/wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1"
         id="jquery-core-js"
       ></script>
       <script
-        src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"
+        src="/wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"
         id="jquery-migrate-js"
       ></script>
       <script
-        src="wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min225e.js?ver=3.19.0"
+        src="/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min225e.js?ver=3.19.0"
         id="font-awesome-4-shim-js"
       ></script>
-      <link rel="https://api.w.org/" href="wp-json/index.html" />
+      <link rel="https://api.w.org/" href="/wp-json/index.html" />
       <link
         rel="alternate"
         type="application/json"
-        href="wp-json/wp/v2/pages/1906.json"
+        href="/wp-json/wp/v2/pages/1906.json"
       />
       <link
         rel="EditURI"
@@ -148,12 +148,12 @@ export default function Head({children}: {children?: React.ReactNode}) {
       <link
         rel="alternate"
         type="application/json+oembed"
-        href="wp-json/oembed/1.0/embedd99b.json?url=https%3A%2F%2Fqinpet.vn%2F"
+        href="/wp-json/oembed/1.0/embedd99b.json?url=https%3A%2F%2Fqinpet.vn%2F"
       />
       <link
         rel="alternate"
         type="text/xml+oembed"
-        href="wp-json/oembed/1.0/embed9005?url=https%3A%2F%2Fqinpet.vn%2F&amp;format=xml"
+        href="/wp-json/oembed/1.0/embed9005?url=https%3A%2F%2Fqinpet.vn%2F&amp;format=xml"
       />
       <noscript
         dangerouslySetInnerHTML={{
@@ -172,17 +172,17 @@ export default function Head({children}: {children?: React.ReactNode}) {
       />
       <link
         rel="icon"
-        href="wp-content/uploads/2023/06/Qinpet-Logo-Favicon-100x100.png"
+        href="/wp-content/uploads/2023/06/Qinpet-Logo-Favicon-100x100.png"
         sizes="32x32"
       />
       <link
         rel="icon"
-        href="wp-content/uploads/2023/06/Qinpet-Logo-Favicon-300x300.png"
+        href="/wp-content/uploads/2023/06/Qinpet-Logo-Favicon-300x300.png"
         sizes="192x192"
       />
       <link
         rel="apple-touch-icon"
-        href="wp-content/uploads/2023/06/Qinpet-Logo-Favicon-300x300.png"
+        href="/wp-content/uploads/2023/06/Qinpet-Logo-Favicon-300x300.png"
       />
       <meta
         name="msapplication-TileImage"
