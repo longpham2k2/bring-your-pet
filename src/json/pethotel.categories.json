@@ -2,35 +2,41 @@
   "_id": {
     "$oid": "662f67fefbe9f35c7e51bdfe"
   },
-  "name": "Tắm sấy và vệ sinh cho thú cưng"
+  "name": "Tắm sấy và vệ sinh cho thú cưng",
+  "key": "tam-say-ve-sinh-cho-meo"
 },
 {
   "_id": {
     "$oid": "662f684efbe9f35c7e51be04"
   },
-  "name": "Dịch vụ Khách Sạn"
+  "name": "Dịch vụ Khách Sạn",
+  "key": "dv-khach-san"
 },
 {
   "_id": {
     "$oid": "662f6886fbe9f35c7e51be09"
   },
-  "name": "Spa Grooming"
+  "name": "Spa Grooming",
+  "key": "spa-grooming"
 },
 {
   "_id": {
     "$oid": "662f68a0fbe9f35c7e51be0c"
   },
-  "name": "Chia sẻ - chăm sóc thú cưng"
+  "name": "Chia sẻ - chăm sóc thú cưng",
+  "key": "chia-se-cach-cham-soc-thu-cung"
 },
 {
   "_id": {
     "$oid": "662f68c4fbe9f35c7e51be0f"
   },
-  "name": "Về chúng tôi - Thương Hiệu QINPET"
+  "name": "Về chúng tôi - Thương Hiệu QINPET",
+  "key": "thuong-hieu-qinpet"
 },
 {
   "_id": {
     "$oid": "662f68e3fbe9f35c7e51be12"
   },
-  "name": "Chia sẻ - Phối Giống cho chó mèo"
+  "name": "Chia sẻ - Phối Giống cho chó mèo",
+  "key": "chia-se-phoi-giong-cho-meo"
 }]
