@@ -10,7 +10,7 @@ export async function getArticles(
   categoryKey?: string
 ): Promise<Articles[]> {
   try {
-    dbConnect();
+    await dbConnect();
     const articles: any[] = await Article.aggregate([
       { $addFields: { categoriesId: { $toObjectId: "$categoryId" } } },
       {

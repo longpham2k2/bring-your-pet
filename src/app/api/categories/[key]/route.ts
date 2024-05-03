@@ -7,7 +7,7 @@ export async function getCategory(
   categoryKey?: string
 ): Promise<Categories | null> {
   try {
-    dbConnect();
+    await dbConnect();
     const categories: any[] = await Category.aggregate([
       categoryKey
         ? {

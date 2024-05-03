@@ -5,7 +5,7 @@ import throwException from "../error/thrower";
 
 export async function getCategories(): Promise<Categories[]> {
   try {
-    dbConnect();
+    await dbConnect();
     const categories: any[] = await Category.find();
     let result: Categories[] = categories.map((doc) => {
       const category = JSON.parse(JSON.stringify(doc));

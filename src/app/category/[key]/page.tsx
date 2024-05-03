@@ -51,7 +51,7 @@ export default function CategoryKey(props: {
         <Header />
         <div className="elementor elementor-2975 elementor-location-archive">
           <div className="elementor-section-wrap">
-            <BreadcrumbSection {...category} />
+            <BreadcrumbSection key={category.key} name={category.name} />
             <div
               className="elementor-element elementor-element-7d489ab8 e-flex e-con-boxed e-con e-parent"
               data-id="7d489ab8"
