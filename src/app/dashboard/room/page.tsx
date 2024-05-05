@@ -2,46 +2,52 @@
 
 import React, { Fragment } from "react";
 import { Button, Table, TableProps, Tag } from "antd";
-import ICamera from "./interfaces/ICamera";
+import IRoom from "./interfaces/IRoom";
 import {
   CameraOutlined,
   DeleteOutlined,
   FormOutlined,
   PlusOutlined,
 } from "@ant-design/icons";
-import { getCameras } from "./scripts";
-import styles from "./Camera.module.css";
+import { getRooms } from "./scripts";
+import styles from "./Room.module.css";
 
-export default function CameraManagement() {
-  const [cameraData, setCameraData] = React.useState<ICamera[]>([]);
+export default function RoomManagement() {
+  const [roomData, setRoomData] = React.useState<IRoom[]>([]);
   React.useEffect(() => {
     let e = async () => {
-      let data = await getCameras();
-      setCameraData(data);
+      let data = await getRooms();
+      setRoomData(data);
     };
     e();
   }, []);
 
-  const columns: TableProps<ICamera>["columns"] = [
+  const columns: TableProps<IRoom>["columns"] = [
     {
-      title: "Mã camera",
-      dataIndex: "key",
-      key: "key",
+      title: "Tên phòng",
+      dataIndex: "name",
+      key: "name",
       render: (text) => (text ? text : "N/A"),
     },
     {
-      title: "Tên camera",
-      dataIndex: "name",
-      key: "name",
+      title: "Loại phòng",
+      dataIndex: "type",
+      key: "type",
       render: (text) => (text ? text : "Camera không tên"),
+    },
+    {
+      title: "Tình trạng",
+      dataIndex: "isOccupied",
+      key: "isOccupied",
+      render: (isOccupied) => (isOccupied ? <Tag>{"Đang ở"}</Tag> : <Tag>{"Trống"}</Tag>),
     },
     {
       title: "Hành động",
       key: "action",
       render: (_, record) => (
         <Fragment>
-          {record.key ? (
-            <Button href={`/api/camera/${record.key}`}>
+          {record.camera ? (
+            <Button href={`/api/camera/${record.camera.key}`}>
               <CameraOutlined /> Xem
             </Button>
           ) : (
@@ -65,7 +71,7 @@ export default function CameraManagement() {
           <PlusOutlined /> Thêm camera
         </Button>
       </div>
-      <Table columns={columns} dataSource={cameraData} />
+      <Table columns={columns} dataSource={roomData} />
     </>
   );
 }

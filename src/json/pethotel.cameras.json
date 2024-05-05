@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "663620b9d27fb38f12fa0fa6"
+  },
+  "name": "Camera 1",
+  "type": "droidcam",
+  "address": "192.168.1.13:4747",
+  "key": "cam_1"
+}]

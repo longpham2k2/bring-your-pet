@@ -9,8 +9,8 @@ export async function getCameras(): Promise<Cameras[]> {
     await dbConnect();
     const cameras: any[] = await Camera.find();
     let result: Cameras[] = cameras.map((doc) => {
-      const Camera = JSON.parse(JSON.stringify(doc));
-      return Camera;
+      const camera = JSON.parse(JSON.stringify(doc));
+      return camera;
     });
 
     return result;
@@ -27,5 +27,40 @@ export async function GET(req: NextRequest): Promise<any> {
     return Response.json([...cameras]);
   } catch (err: any) {
     throwException(err.message);
+  }
+}
+
+export async function POST(req: NextRequest): Promise<any> {
+  try {
+    await dbConnect();
+    const formData = await req.formData();
+    console.log(formData);
+    const name = formData.get("name");
+    if (!name) {
+      return throwException("Name is required", 400);
+    }
+    const type = formData.get("type");
+    if (!type) {
+      return throwException("Type is required", 400);
+    }
+    const address = formData.get("address");
+    if (!address) {
+      return throwException("Camera Address is required", 400);
+    }
+    const key = formData.get("key");
+    if (!key) {
+      return throwException("Camera Key is required", 400);
+    }
+    const newRoom: Cameras = new Camera({
+      name: name,
+      type: type,
+      address: address,
+      key: key,
+    });
+    await newRoom.save();
+
+    return Response.json({ message: "Success" });
+  } catch (e: any) {
+    return throwException(e.message, 500);
   }
 }

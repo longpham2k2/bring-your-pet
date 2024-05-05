@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "66376adbe1ab668c5b679723"
+  },
+  "name": "Miu",
+  "ownerId": "66375dd0e1ab668c5b679720",
+  "checkInAt": "2024-05-05T10:01:25Z",
+  "checkOutAt": "2024-05-10T10:01:25Z",
+  "avatar": "https://via.placeholder.com/90x90",
+  "roomId": "66376d8be1ab668c5b679738",
+  "serviceId": "66376bafe1ab668c5b679729"
+},
+{
+  "_id": {
+    "$oid": "663775f1e1ab668c5b679780"
+  },
+  "name": "Miu",
+  "ownerId": "66375dd0e1ab668c5b679720",
+  "checkInAt": "2024-05-05T10:01:25Z",
+  "checkOutAt": "2024-05-10T10:01:25Z",
+  "avatar": "https://via.placeholder.com/90x90",
+  "serviceId": "66376bafe1ab668c5b679729",
+  "roomId": null
+}]

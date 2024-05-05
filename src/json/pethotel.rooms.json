@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "66376d8be1ab668c5b679738"
+  },
+  "name": "Phòng 1",
+  "type": "single",
+  "isOccupied": true,
+  "cameraId": "663620b9d27fb38f12fa0fa6"
+},
+{
+  "_id": {
+    "$oid": "66376f1ee1ab668c5b679740"
+  },
+  "name": "Phòng 2",
+  "type": "double",
+  "cameraId": "663620b9d27fb38f12fa0fa6",
+  "isOccupied": false
+},
+{
+  "_id": {
+    "$oid": "66376f3be1ab668c5b679741"
+  },
+  "name": "Phòng 3",
+  "type": "penthouse",
+  "cameraId": "663620b9d27fb38f12fa0fa6",
+  "isOccupied": false
+},
+{
+  "_id": {
+    "$oid": "66376f43e1ab668c5b679742"
+  },
+  "name": "Phòng 4",
+  "type": "villa",
+  "cameraId": "663620b9d27fb38f12fa0fa6",
+  "isOccupied": false
+}]

@@ -1,0 +1,14 @@
+.heading {
+  margin: 8px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.headingTitle {
+  /* color: white; */
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}

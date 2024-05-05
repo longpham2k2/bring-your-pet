@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "66376bafe1ab668c5b679729"
+  },
+  "name": "Khách sạn",
+  "key": "khach-san"
+},
+{
+  "_id": {
+    "$oid": "66376c4be1ab668c5b67972a"
+  },
+  "name": "Tắm gôi",
+  "key": "tam-goi"
+},
+{
+  "_id": {
+    "$oid": "66376ca5e1ab668c5b67972b"
+  },
+  "name": "Spa Grooming",
+  "key": "spa-grooming"
+}]
