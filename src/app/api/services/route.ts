@@ -38,14 +38,9 @@ export async function POST(req: NextRequest): Promise<any> {
     if (!name) {
       return throwException("Name is required", 400);
     }
-    const key = formData.get("key");
-    if (!key) {
-      return throwException("Key is required", 400);
-    }
     const newService: Services = new Service({
       name: name,
-      key: key,
-    })
+    });
     await newService.save();
 
     return Response.json({ message: "Success" });

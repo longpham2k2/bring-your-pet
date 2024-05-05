@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import { NextRequest } from "next/server";
 import throwException from "@/app/api/error/thrower";
 import dbConnect from "@/app/mongoose/dbConnect";
-import User, { Users } from "../models/User";
+import User, { Users } from "../../user/models/User";
 const bcrypt = require('bcrypt');
 
 export async function POST(req: NextRequest) {
