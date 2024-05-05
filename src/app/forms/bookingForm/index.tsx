@@ -33,7 +33,7 @@ export default function BookingForm() {
     console.log(email, password);
     // signIn(email, password);
     return push('/dashboard');
-  }, []);
+  }, [push]);
   return (
     <div
       // data-elementor-type="popup"

@@ -47,15 +47,10 @@ export async function POST(req: NextRequest): Promise<any> {
     if (!address) {
       return throwException("Camera Address is required", 400);
     }
-    const key = formData.get("key");
-    if (!key) {
-      return throwException("Camera Key is required", 400);
-    }
     const newRoom: Cameras = new Camera({
       name: name,
       type: type,
       address: address,
-      key: key,
     });
     await newRoom.save();
 

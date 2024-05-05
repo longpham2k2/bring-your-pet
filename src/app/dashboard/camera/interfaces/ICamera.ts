@@ -3,5 +3,4 @@ export default interface ICamera {
   name: string;
   type: string;
   address: string;
-  key: string;
 }
