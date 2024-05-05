@@ -32,8 +32,8 @@ export default function Home() {
         <div className="elementor elementor-1906">
           <HeroSection />
           <TestimonialSection />
-          <ServiceSection />
-          <CustomerSection />
+          {/* <ServiceSection /> */}
+          {/* <CustomerSection /> */}
           <AboutSection />
           <StatisticSection />
           <PromoteSection />

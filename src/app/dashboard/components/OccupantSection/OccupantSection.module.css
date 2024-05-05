@@ -1,0 +1,41 @@
+.container {
+  min-width: 600px;
+  max-width: 40vw;
+  min-height: 100vh;
+  border-right: 2px solid #f1f6fc;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+.logoContainer {
+  padding: 24px 24px;
+}
+.controlBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.controlButton {
+  background: #81d0df;
+  border-radius: 21px;
+  margin: 8px 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.controlTitle {
+  color: white;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+.occupantContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.occupantContainer > * {
+  margin: 8px 16px;
+}

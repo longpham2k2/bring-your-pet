@@ -1,6 +1,39 @@
 "use client";
 
+import React from "react";
+import { signIn } from "./scripts";
+import { redirect, useRouter } from "next/navigation";
+
+interface InputElememt extends Element {
+  value?: string;
+}
 export default function BookingForm() {
+  const { push } = useRouter();
+
+  const onSignInClick = React.useCallback((e: any) => {
+    const inputEmail: InputElememt | null =
+      document.querySelector("#form-field-email");
+    if (!inputEmail) return;
+    const email = inputEmail.value;
+    if (!email) {
+      alert("Hãy nhập email");
+      return;
+    }
+
+    const inputPassword: InputElememt | null = document.querySelector(
+      "#form-field-field_62c4c1a"
+    );
+    if (!inputPassword) return;
+    const password = inputPassword.value;
+    if (!password) {
+      alert("Hãy nhập password");
+      return;
+    }
+
+    console.log(email, password);
+    // signIn(email, password);
+    return push('/dashboard');
+  }, []);
   return (
     <div
       // data-elementor-type="popup"
@@ -220,20 +253,7 @@ export default function BookingForm() {
                   data-id="609fc3f0"
                   data-element_type="widget"
                   data-widget_type="icon-box.default"
-                >
-                  <div className="elementor-widget-container">
-                    <div className="elementor-icon-box-wrapper">
-                      <div className="elementor-icon-box-content">
-                        <h2 className="elementor-icon-box-title">
-                          <span> Đặt lịch ngay ! </span>
-                        </h2>
-                        <p className="elementor-icon-box-description">
-                          Nhận ngay ưu đãi hoàn 5% khi đặt lịch trước
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ></div>
                 <div
                   className="elementor-element elementor-element-34084be6 elementor-button-align-center elementor-widget elementor-widget-form"
                   data-id="34084be6"
@@ -534,43 +554,9 @@ export default function BookingForm() {
                         `,
                       }}
                     ></style>
-                    <form
-                      className="elementor-form"
-                      method="post"
-                      name="Đặt lịch"
-                    >
-                      <input type="hidden" name="post_id" value="3247" />
-                      <input type="hidden" name="form_id" value="34084be6" />
-                      <input type="hidden" name="referer_title" value="" />
-
-                      <input type="hidden" name="queried_id" value="1906" />
-
+                    <form className="elementor-form">
                       <div className="elementor-form-fields-wrapper elementor-labels-">
-                        <div className="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required">
-                          <label
-                            htmlFor="form-field-name"
-                            className="elementor-field-label elementor-screen-only"
-                          >
-                            Your Name
-                          </label>
-                          <input
-                            size={1}
-                            type="text"
-                            name="form_fields[name]"
-                            id="form-field-name"
-                            className="elementor-field elementor-size-lg elementor-field-textual"
-                            placeholder="Tên của bạn"
-                            required
-                            aria-required="true"
-                          />
-                        </div>
                         <div className="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
-                          <label
-                            htmlFor="form-field-email"
-                            className="elementor-field-label elementor-screen-only"
-                          >
-                            Email Address
-                          </label>
                           <input
                             size={1}
                             type="email"
@@ -583,149 +569,22 @@ export default function BookingForm() {
                           />
                         </div>
                         <div className="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_62c4c1a elementor-col-100 elementor-field-required">
-                          <label
-                            htmlFor="form-field-field_62c4c1a"
-                            className="elementor-field-label elementor-screen-only"
-                          >
-                            Phone Number
-                          </label>
                           <input
                             size={1}
-                            type="tel"
+                            type="password"
                             name="form_fields[field_62c4c1a]"
                             id="form-field-field_62c4c1a"
                             className="elementor-field elementor-size-lg elementor-field-textual"
-                            placeholder="Số điện thoại"
+                            placeholder="Mật khẩu"
                             required
                             aria-required="true"
-                            pattern="[0-9()#&amp;+*-=.]+"
-                            title="Only numbers and phone characters (#, -, *, etc) are accepted."
                           />
-                        </div>
-                        <div className="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_5c3c17f elementor-col-100 elementor-field-required">
-                          <label
-                            htmlFor="form-field-field_5c3c17f"
-                            className="elementor-field-label elementor-screen-only"
-                          >
-                            Service
-                          </label>
-                          <div className="elementor-field elementor-select-wrapper remove-before">
-                            <div className="select-caret-down-wrapper">
-                              <svg
-                                aria-hidden="true"
-                                className="e-font-icon-svg e-eicon-caret-down"
-                                viewBox="0 0 571.4 571.4"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z"></path>
-                              </svg>
-                            </div>
-                            <select
-                              name="form_fields[field_5c3c17f]"
-                              id="form-field-field_5c3c17f"
-                              className="elementor-field-textual elementor-size-lg"
-                              required
-                              aria-required="true"
-                            >
-                              <option value="Chọn dịch vụ">Chọn dịch vụ</option>
-                              <option value="Dịch vụ Cắt tỉa thú cưng">
-                                Dịch vụ Cắt tỉa thú cưng
-                              </option>
-                              <option value="Dịch vụ Tắm sấy  + vệ sinh thú cưng">
-                                Dịch vụ Tắm sấy + vệ sinh thú cưng
-                              </option>
-                              <option value="Dịch vụ Khách sạn thú cưng">
-                                Dịch vụ Khách sạn thú cưng
-                              </option>
-                              <option value=""></option>
-                              <option value=""></option>
-                            </select>
-                          </div>
-                        </div>
-                        <div className="elementor-field-type-date elementor-field-group elementor-column elementor-field-group-field_d01d051 elementor-col-100 elementor-field-required">
-                          <label
-                            htmlFor="form-field-field_d01d051"
-                            className="elementor-field-label elementor-screen-only"
-                          >
-                            Date
-                          </label>
-
-                          <input
-                            type="date"
-                            name="form_fields[field_d01d051]"
-                            id="form-field-field_d01d051"
-                            className="elementor-field elementor-size-lg elementor-field-textual elementor-date-field elementor-use-native"
-                            placeholder="Bạn muốn đặt lịch vào ngày ?"
-                            required
-                            aria-required="true"
-                            pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
-                          />
-                        </div>
-                        <div className="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_bab2d82 elementor-col-100 elementor-field-required">
-                          <label
-                            htmlFor="form-field-field_bab2d82"
-                            className="elementor-field-label elementor-screen-only"
-                          >
-                            Time
-                          </label>
-                          <div className="elementor-field elementor-select-wrapper remove-before">
-                            <div className="select-caret-down-wrapper">
-                              <svg
-                                aria-hidden="true"
-                                className="e-font-icon-svg e-eicon-caret-down"
-                                viewBox="0 0 571.4 571.4"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z"></path>
-                              </svg>
-                            </div>
-                            <select
-                              name="form_fields[field_bab2d82]"
-                              id="form-field-field_bab2d82"
-                              className="elementor-field-textual elementor-size-lg"
-                              required
-                              aria-required="true"
-                            >
-                              <option value="Lựa chọn khung giờ!!!">
-                                Lựa chọn khung giờ!!!
-                              </option>
-                              <option value="Từ 8h30 - 9h30">
-                                Từ 8h30 - 9h30
-                              </option>
-                              <option value="Từ 9h30 - 10h30">
-                                Từ 9h30 - 10h30
-                              </option>
-                              <option value="Từ 10h30 - 11h30">
-                                Từ 10h30 - 11h30
-                              </option>
-                              <option value="Từ 11h30 - 12h30">
-                                Từ 11h30 - 12h30
-                              </option>
-                              <option value="Từ 12h30 - 13h30">
-                                Từ 12h30 - 13h30
-                              </option>
-                              <option value="Từ 13h30 - 14h30">
-                                Từ 13h30 - 14h30
-                              </option>
-                              <option value="Từ 14h30 - 15h30">
-                                Từ 14h30 - 15h30
-                              </option>
-                              <option value="Từ 15h30 - 16h30">
-                                Từ 15h30 - 16h30
-                              </option>
-                              <option value="Từ 16h30 - 17h30">
-                                Từ 16h30 - 17h30
-                              </option>
-                              <option value="Từ 17h30 - 18h00">
-                                Từ 17h30 - 18h00
-                              </option>
-                            </select>
-                          </div>
                         </div>
                         <div className="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-                          <button
-                            type="submit"
+                          <div
                             className="elementor-button elementor-size-sm"
+                            onClick={onSignInClick}
+                            style={{ cursor: "pointer" }}
                           >
                             <span>
                               <span className="elementor-align-icon-right elementor-button-icon">
@@ -739,10 +598,10 @@ export default function BookingForm() {
                                 </svg>
                               </span>
                               <span className="elementor-button-text">
-                                Đặt lịch ngay!
+                                Đăng nhập
                               </span>
                             </span>
-                          </button>
+                          </div>
                         </div>
                       </div>
                     </form>

@@ -7,7 +7,6 @@ export interface Articles extends mongoose.Document {
   };
   categoryId: string;
   title: string;
-  excerpt: string;
   content: string;
 }
 
@@ -18,7 +17,6 @@ const ArticleSchema = new mongoose.Schema<Articles>({
   },
   categoryId: {type: String, required: true},
   title: {type: String, required: true},
-  excerpt: {type: String, required: true},
   content: {type: String, required: true},
 });
 

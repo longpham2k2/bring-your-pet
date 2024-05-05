@@ -1,0 +1,89 @@
+.container {
+  width: 100%;
+  position: relative;
+  background: white;
+  box-shadow: 0px 14px 40px rgba(109, 141, 173, 0.25);
+  border-radius: 21px;
+  display: flex;
+  flex-direction: row;
+}
+.avatarContainer {
+  padding: 25px;
+  width: 90px;
+  height: 90px;
+}
+.avatar {
+  border-radius: 50%;
+}
+.occupantInfo {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  border-right: 2px solid #ececec;
+  flex: 1;
+}
+.occupantName {
+  color: black;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+  margin-bottom: 16px;
+}
+.serviceContainer {
+  width: 88px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background: #81d0df;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+.service {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+.duration {
+  color: #8f8f8f;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.additionalBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.additionalInfo {
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.optionBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.optionBox .optionContainer {
+  padding-right: 8px;
+}
+.optionBox .optionContainer:last-child {
+  padding-right: 0px;
+}
+.optionContainer {
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}

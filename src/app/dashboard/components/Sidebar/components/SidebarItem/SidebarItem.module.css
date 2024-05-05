@@ -1,0 +1,27 @@
+.itemContainer {
+  /* width: 276px; */
+  border-radius: 21px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 24px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+  justify-content: left;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.itemIcon {
+  display: flex;
+  align-items: center;
+}
+
+.itemTitle {
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  word-wrap: break-word;
+}

@@ -1,0 +1,36 @@
+.container {
+  height: 90px;
+  border-bottom: 2px #f1f6fc solid;
+}
+.navBar {
+  height: 100%;
+  justify-content: flex-end;
+  display: flex;
+}
+.userAccount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userInfo {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  margin-left: 8px;
+}
+.userName {
+  color: #828282;
+  font-size: 12;
+  font-family: Montserrat;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.userId {
+  color: #bdbdbd;
+  font-size: 12;
+  font-family: Montserrat;
+  font-weight: 500;
+  word-wrap: break-word;
+}
