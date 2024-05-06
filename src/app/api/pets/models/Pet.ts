@@ -4,17 +4,17 @@ export interface Pets extends mongoose.Document {
   avatar: string;
   name: string;
   ownerId: string;
-  service: string;
+  serviceId: string;
   roomId: string;
   checkInAt: string;
   checkOutAt: string;
 }
 
 const PetSchema = new mongoose.Schema<Pets>({
-  avatar: { type: String, required: true },
+  avatar: { type: String, required: false },
   name: { type: String, required: true },
   ownerId: { type: String, required: true },
-  service: { type: String, required: true },
+  serviceId: { type: String, required: true },
   roomId: { type: String, required: false },
   checkInAt: { type: String, required: true },
   checkOutAt: { type: String, required: false },

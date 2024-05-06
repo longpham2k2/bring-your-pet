@@ -97,3 +97,42 @@ export async function GET(req: NextRequest): Promise<any> {
     return throwException(err.message);
   }
 }
+
+export async function POST(req: NextRequest): Promise<any> {
+  try {
+    await dbConnect();
+    const formData = await req.formData();
+    console.log(formData);
+    const name = formData.get("name");
+    if (!name) {
+      return throwException("Name is required", 400);
+    }
+    const ownerId = formData.get("ownerId");
+    if (!ownerId) {
+      return throwException("ownerId is required", 400);
+    }
+    const serviceId = formData.get("serviceId");
+    if (!serviceId) {
+      return throwException("serviceId is required", 400);
+    }
+    const roomId = formData.get("roomId");
+    const checkInAt = formData.get("checkInAt");
+    if (!checkInAt) {
+      return throwException("checkInAt is required", 400);
+    }
+    const checkOutAt = formData.get("checkOutAt");
+    const newPet: Pets = new Pet({
+      name: name,
+      ownerId: ownerId,
+      serviceId: serviceId,
+      roomId: roomId ? roomId : null,
+      checkInAt: checkInAt,
+      checkOutAt: checkOutAt ? checkOutAt : null,
+    });
+    await newPet.save();
+
+    return Response.json({ message: "Success" });
+  } catch (e: any) {
+    return throwException(e.message, 500);
+  }
+}
